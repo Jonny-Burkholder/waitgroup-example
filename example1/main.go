@@ -5,7 +5,9 @@ import (
 	"sync"
 )
 
-/*In this code, we'll explore the basic useage of wait groups in go*/
+/*In this code, we'll explore the basic useage of wait groups in go. Wait groups are just what they
+sound like - they tell a goroutine (often your main() function), to wait and not return until other
+goroutines are done*/
 
 //first, we need to create a wait group. This will keep track of all the functions that are using
 //a given channel. To keep this example basic, we'll only use one channel and one wait group
